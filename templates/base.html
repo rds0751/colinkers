@@ -1,0 +1,80 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>{% load static %}
+<head>
+<title>CoLinkers | Home </title>
+<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA4PqQAOFbiAE9NXAA8R5IAOzZOAC5HtgA7TpUA4uPlAPn38wA3QGwAL0zOABw6vQBVWW4AJEKoAOTy7gAnMb0AJTq0ACk9qwAsOK4AKzmxACdBrgCxsLIAJkC0AEVBbwBfVtkALjyxAC9b6QAzU+wAmqGzAPTz8QA8S+8ANFT4AJeFlgAvSb0APD29APv2+gD3/PoAMkvDAPz9/QAgO7gAxbfQACc4uAAoPq8AJju4ACs1uAApPLIAKzyyACs6tQAqPLsALj6vACw9tQBIR2cAMlTnADJE/wCOoc8AMD+7AFJcrgChvPIA+fzyACA1sAD9/PIAUV1qAP/88gD///IA//31AP39/gBxbngAJj2tAD5PXAAnO7AA29HfACg8swCOk9MALDq2AC02vAA1PaQAKz65ACk8xQAtPLwAx8fUADE6vwBWWqkA9vb8ACFAnAD9+vYA/fn8ACY0rgD//fYA/vr/ACQ2tAD//f8ATU6YACg7sQAiRbQAKDy0ACA/xgAmProAKTm9ADFDnAAwOLEAKj23ADRM7ACLjocAKkK0ADc+nwA/O5YAU0+tADA/tAA0O7EALzrAAD09nAA7QJwAOUvyAPPy+gD49fEAK0XPAPv48QAsUskA/P7xACM6pgD//P0APEFzAFVgzgAoObUAKTm1ACg6uAAqO7IAR0tbADhQ1QBWS5kANUzkACk7uwA6N50AND+jAC46uAAuO7sAK0S7ADNU8wD57u8A7/f4APbw9QBHSYIASVzDAJOGpgD4+fUAREeXAPv29QBERKAA+fz1AExLiABka4QAIjewAP/5/gBobIcAJDqwADM+jwDIwr8AKTe5AFRRkQAqPbAAJDrCACk6uQAuPqoAMj2nACVGuQAvO7wALj3CADhEoQAwRLMAM0OwAPjy8wDQzc4A+vn2APz59gD5+f8ART2wAFRScQCUj6cA//f5AJOamwD8+f8A//7zAPz8/wD9/vwAIUWuAKusvgDq8usAQElpACs6sQAxP/4A7O7xADVKhwAyT+YAMUzvAC1BqwBNU6oAM07sADdM7wBFRH4AZ1l0ADdL9QA+TYcAPkOWAPb0+gCMqdoATUd+ADpDsQBEWuMA+fv9APz9+gBKUZwAHzu+ACFAsgAoRZ0AKUzwACc5uAAqOLUAKjqyAFxdbwApPbIAM0rqAEJHbQBiWWwARUdtAFlhewAwQqYAQEaOADQ8uABhecIARFV8AJOKmgBBSpoANUS+AEJTkQBTUHYA/P71AP/98gBTT3wA+/37ACQ0swD//vUAVVHbACA9swB0c3IAKDqzACQ+tgAcSrYALz2hACY6vAAsSfoAKze8AC85sADs8/AA8e/tACw6vAAAAAAAQxOfLiURA1HDOL9LOVPCDVzYmu9pf/2YrrYHBDby1aLZfBnSHHFacuw/tw7z5zsqe3evZnS1j8ZqybEdI8dtXS1WjQhBPYQsyL3x3rqqBjdFY7OtuYUP8gE01hJGjLAil2is0d/bL/RzxdwKzUTaa15vV1KeYJ1noPlwZSH7m01kk/BYlfX+MlkbHsEwo0iIhqeK0OpM+KFOgsTA4gmZBSts5iRPAGHT1F81jr5VAmJ9g+VAlAzKUIcLGOB2PIHM1xTjQot4KBftuxWykjPo5EdKJ24gJvyQy+u0OpZ69qkQFkm8992rVD7unHnPH6SopvoppTF+zpFb6eGAGol1uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="{% static 'core/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<link href="{% static 'core/css/slider.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="{% static 'core/js/jquery-1.9.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'core/js/jquery.nivo.slider.js' %}"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</head>
+<body>
+      <div class="header">
+		     <div class="header_top">
+		     	<div class="wrap">
+				 <div class="logo">
+					 <a href="index.html"><img src="{% static 'core/images/logo.png' %}" alt="" /></a>
+					 </div>
+				  <div class="menu">
+					<ul>
+						<li><a href="{% url 'home' %}">HOME</a></li>
+				    	<li><a href="{% url 'about' %}">ABOUT</a></li>
+				    	<li><a href="{% url 'events' %}">EVENTS</a></li>
+				    	<li><a href="{% url 'gallery' %}">GALLERY</a></li>
+				    	<li><a href="{% url 'login' %}">LOGIN</a></li>
+                        <li><a href="{% url 'signup' %}">SIGNUP</a></li>
+				    	<li><a href="{% url 'contact' %}">CONTACT</a></li>
+				    	<div class="clear"></div>
+				    </ul>				    
+				 </div>
+			     <div class="clear"></div>
+		      </div>		   
+		  </div>
+		{% block main %}
+		{% endblock %}
+     <div class="footer">
+       <div class="wrap">
+    	<div class="half-footer" style="margin-left:0">
+        <ul class="feeds">
+        	<h3>Our Specialities</h3>
+            <li><a href="{% url 'home' %}">There are many variations of passages of Lorem</a></li>
+            <li><a href="{% url 'home' %}"> but the majority have suffered alteration in </a></li>
+            <li><a href="{% url 'home' %}">Morbi nec dolor ipsum vel congugue</a></li>
+            <li><a href="{% url 'home' %}">Nullam a odio ipsum, at sodales lorem.</a></li>
+            <li><a href="{% url 'home' %}">Nullam imperdiet vulputate congugue</a></li>
+        </ul>
+        <div class="footer-pic"><img src="{% static 'core/images/f-icon.png' %}" alt=""></div>
+        <div class="clear"></div>
+        </div>
+        <div class="half-footer" style="border:none">
+        <ul class="adress">
+        	<h3>Catch on</h3>
+            <li><a href="{% url 'home' %}">CoLinkers Event Management Pvt. Ltd.,</a></li>
+            <li><a href="{% url 'home' %}">Thapar University, Bhadson Road,</a></li>
+            <li><a href="{% url 'home' %}">Patiala, Punjab</a></li>
+            <li><a href="{% url 'home' %}">147004 - IN</a></li>
+            <li><a href="{% url 'home' %}">tushar@approapp.com</a></li>
+        </ul>
+        <div class="footer-pic"><img src="{% static 'core/images/foot-icon.png' %}" alt=""></div>
+        </div>
+    	<div class="clear"></div>        
+      </div>
+    </div>
+    <div class="copy">
+    	<p>© 2013 Rights Reseverd | Design by <a href="{% url 'home' %}">CoLinkers Event Management Pvt. Ltd.</a></p>
+    </div>
+</body>
+</html>
+

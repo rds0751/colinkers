@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<div class="main">
+     	<div class="wrap">
+     	    <div class="content_top">
+     	     <div class="gallery">
+           	   <h3>Latest Photos</h3>
+	           <div class="section group">
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img1_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img1.jpg' %}" alt=""> <span class="zoom-icon"></span></a>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img2_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img2.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img3_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img3.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img4_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img4.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+				</div>
+		   </div>	
+		   <div class="section group">
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img5_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img5.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img6_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img6.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img7_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img7.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="{% static 'core/images/gallery_img8_b.jpg' %}" class="swipebox" title="Image Title"> <img src="{% static 'core/images/gallery_img8.jpg' %}" alt=""><span class="zoom-icon"></span> </a>
+				</div>
+		   </div>	
+		           <div class="projects-bottom-paination">
+						<ul>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+						</ul>
+					</div>		   	  
+               </div>
+              </div>
+		</div>
+     </div>
+{% endblock %}

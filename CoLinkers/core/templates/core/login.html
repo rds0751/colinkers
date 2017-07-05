@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<div class="col_1_of_3 contact_1_of_3">
+          <div class="contact-form">
+           
+    <br>
+    
+          </div>
+        </div>
+        <div class="col_1_of_3 contact_1_of_3">
+          <div class="contact-form">
+            <h3>LOGIN HERE</h3>
+    <br>
+    <form method="post">
+    {% csrf_token %}
+                <div>
+                  <span><input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></span>
+                </div>
+                <div>
+                  <span><input type="text" class="textbox" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"></span>
+                </div>
+               <div>
+                  <span><input type="submit" class="mybutton" value="Submit"></span>
+              </div>
+              </form>
+              <a href="{% url 'signup' %}"><h4>Signup Here</h4></a>    
+          </div>
+        </div>
+{% endblock %}

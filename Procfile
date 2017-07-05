@@ -1,0 +1,1 @@
+web: gunicorn CoLinkers.wsgi --log-file -

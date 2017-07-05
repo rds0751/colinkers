@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+<!------ Slider ------------>
+		<div class="wrap">
+		  <div class="slider">
+	      	<div class="slider-wrapper theme-default">
+	            <div id="slider" class="nivoSlider">
+	                <img src="{% static 'core/images/1.jpg' %}" data-thumb="images/1.jpg" alt="" />
+	                <img src="{% static 'core/images/2.jpg' %}" data-thumb="images/2.jpg" alt="" />
+	                <img src="{% static 'core/images/3.jpg' %}" data-thumb="images/3.jpg" alt="" />
+	                <img src="{% static 'core/images/4.jpg' %}" data-thumb="images/4.jpg" alt="" />
+	                 <img src="{% static 'core/images/5.jpg' %}" data-thumb="images/5.jpg" alt="" />
+	            </div>
+	        </div>
+   		</div>
+   	  </div>
+		<!------End Slider ------------>
+  </div>
+     <div class="main">
+     	<div class="wrap">
+     	   <div class="section group">
+				<div class="listview_1_of_3 images_1_of_3 event_grid">
+					<a href="events">
+					<div class="listimg listimg_1_of_2">
+						  <img src="{% static 'core/images/event_1.jpg' %}" alt="" />
+					</div>
+					<div class="text list_1_of_2">
+						<div class="date">
+							<figure><span>02</span>January</figure>
+						</div>
+					</div></a>
+				</div>				
+				<div class="listview_1_of_3 images_1_of_3 event_grid">
+					<a href="{% url 'events' %}">
+					<div class="listimg listimg_1_of_2">
+						  <img src="{% static 'core/images/event_2.jpg' %}" alt="" />
+					</div>
+					<div class="text list_1_of_2">
+						<div class="date">
+							<figure><span>14</span>March</figure>
+						</div>
+				     </div>
+				     </a>
+				</div>				
+				<div class="listview_1_of_3 images_1_of_3 event_grid">
+					<a href="{% url 'events' %}">
+					<div class="listimg listimg_1_of_2">
+						  <img src="{% static 'core/images/event_3.jpg' %}" alt="" />
+					</div>
+					<div class="text list_1_of_2">
+						<div class="date">
+							<figure><span>18</span>March</figure>
+						</div>
+				    </div>
+				    </a>
+				</div>				
+			</div>
+			 <div class="content_bottom">
+			 <div class="section group">
+				<div class="col_1_of_3 span_1_of_3 today_show">
+					<h3>Today's Show</h3>
+					<img src="{% static 'core/images/today_show.jpg' %}" alt="" />
+					<h5><span>31 March</span></h5>
+					<h5>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
+					<a href="#" class="button">View More</a>
+				</div>
+					<div class="col_1_of_3 span_1_of_3">
+						<h3>New Attractions</h3>
+					            <div class="track_list">
+					  	              <ul>
+										<li><a href="#">consectetur adipisicing elit</a></li>
+										<li><a href="#">sed do eiusmod tempor incididunt</a></li>
+										<li><a href="#">labore et dolore magna aliqua.</a></li>
+										<li><a href="#">sed do eiusmod tempor</a></li>
+										<li><a href="#">abore et dolore magna</a></li>
+										<li><a href="#">incididunt ut labore et dolore</a></li>
+										<li><a href="#">dolore magna aliqua</a></li>
+										<li><a href="#">adipisicing elit, sed do eiusmod</a></li>
+										<li><a href="#">incididunt ut labore et dolore</a></li>
+									</ul>
+					            </div>
+							</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>Latest Videos</h3>
+					  <a href="{% url 'gallery' %}"><img src="{% static 'core/images/videos.jpg' %}" alt="" /></a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<a href="{% url 'gallery' %}" class="button">See All</a>
+				</div>
+			</div>
+		 </div>
+		</div>
+     </div>
+     {% endblock %}
